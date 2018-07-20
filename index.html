@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<title>stacey marks</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Catamaran:300|Galada|Work+Sans:300" rel="stylesheet"><style>
+h1,h2,h4,h5 {font-family: 'Galada', cursive;}
+body {font-size:16px;font-family: 'Catamaran', sans-serif;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="background-color: #f76d61; color:white;z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>stacey<br>marks</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">home</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">about</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">projects</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#f76d61;color:white;">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right" style="background-color:#f76d61; color:white;" onclick="w3_open()">☰</a>
+  <span>stacey marks</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>stacey marks</b></h1>
+    <hr style="width:100px;border:5px solid #f76d61" class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="me-sitting.jpg" style="width:100%" onclick="onClick(this)" alt="me, sitting">
+    </div>
+
+    <div class="w3-half">
+      <img src="mountain-me.jpg" style="width:100%" onclick="onClick(this)" alt="me, laughing on a mountain">
+      <img src="iamstace.png" style="width:100%" onclick="onClick(this)" alt="me, being cheeky">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="about" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color:#f76d61"><b>about</b></h1>
+    <hr style="width:50px;border:5px solid #f76d61" class="w3-round">
+    <ul>
+    <li>casual urban cyclist with a serious sweet tooth</li>
+<li>native new yorker</li>
+<li>aspiring software engineer</li>
+<li>passion for languages</li>
+<ul><li>technical: javascript, ruby</li>
+<li>spoken: mandarin, spanish</li></ul>
+<li>has won way too many scholarships to live abroad</li>
+<img id="map" src="map-with-stars.png" style="width:100%"/>
+</ul>
+  </div>
+
+  <!-- projects -->
+  <div class="w3-container" id="projects" style="margin-top:75px">
+    <h1 class="w3-xxxlarge"style="color:#f76d61"><b>projects</b></h1>
+    <hr style="width:50px;border:5px solid #f76d61" class="w3-round">
+  </div>
+
+  <!-- the projects -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="new-fatty-screencap.png" style="width:100%">
+        <div class="w3-container">
+          <h3>fatty</h3>
+          <a id="project-link" target=“_blank” style="color:#f76d61;" href="https://youtu.be/X7pdGQgfLmM">demo</a> | <a id="project-link" target=“_blank” style="color:#f76d61;" href="https://github.com/smarks8/FINALPROJECTFATTY">repo</a>
+          <p class="w3-opacity">"f.a.t.t.y. - finding all the tantilizing yummies"</p>
+          <p>premier bucket list app to find and track every yummy that your tummy may desire</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="new-ath-screencap.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>apples to humanity</h3>
+          <a id="project-link" target=“_blank” style="color:#f76d61;" href="https://www.youtube.com/watch?v=eNj0o_qLcUQ&feature=youtu.be">demo</a> | <a id="project-link" target=“_blank” style="color:#f76d61;" href="https://github.com/smarks8/apples-to-humanity">repo</a>
+          <p class="w3-opacity">“an internet game for horrible people who enjoy hilarious comparisons”</p>
+          <p>web-based version of cards against humanity, or apples to apples</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="space-jump-screencap.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>space jump </h3>
+          <a id="project-link" target=“_blank” style="color:;" href="https://www.youtube.com/watch?v=eNj0o_qLcUQ&feature=youtu.be">demo</a> | <a id="project-link" target=“_blank” style="color:#f76d61;" href="https://github.com/smarks8/Space-Jump">repo</a>
+          <p class="w3-opacity">"like doodle jump...but better"</p>
+          <p>highly addictive & highly infuriating rendition of the classic time suck game</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge"style="color:#f76d61"><b>contact</b></h1>
+    <hr style="width:50px;border:5px solid #f76d61" class="w3-round">
+
+    <a href="https://github.com/smarks8" target=“_blank”><img src="Octocat.png"style="width:60px"></a>
+    <a href="mailto:staceyamarks@gmail.com" target=“_blank”><img src="gmail.png"style="width:80px"></a>
+    <a href="https://www.linkedin.com/in/staceymarks/" target=“_blank”><img src="linkedinlogoblue.png"style="width:50px"></a>
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
